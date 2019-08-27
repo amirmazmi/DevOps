@@ -19,6 +19,13 @@ https://repo.saltstack.com/#ubuntu
 ### Bootstrap script for installation
 https://github.com/saltstack/salt-bootstrap  
 
+```    shasum <file> | awk '$1=="<checksum>" {print"good to go"}'  ```  
+  * sha256sum  
+  * sha512sum  
+  * md5sum
+
+
+
 <br><br>
 ### Post installation configuration  
 
