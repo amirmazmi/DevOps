@@ -16,6 +16,23 @@ https://repo.saltstack.com/#ubuntu
    ```sudo apt install salt-master salt-minion salt-ssh salt-syndic salt-cloud salt-api```
  
 <br><br>
-### Post installation configuration
-   
-   
+### Bootstrap script for installation
+https://github.com/saltstack/salt-bootstrap  
+
+<br><br>
+### Post installation configuration  
+
+<br><br>
+### Pre seeding keys for minions
+https://docs.saltstack.com/en/latest/topics/tutorials/preseed_key.html
+
+
+
+
+<br><br><br><br><br>
+## Commands
+```salt '*' test.ping  ```  
+```salt '*' manage.status  ```  
+```salt '*' manage.alived  ```  
+
+<br>
