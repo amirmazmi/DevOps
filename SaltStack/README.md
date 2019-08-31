@@ -19,27 +19,36 @@ https://repo.saltstack.com/#ubuntu
 ### Bootstrap script for installation
 https://github.com/saltstack/salt-bootstrap  
 
-```    shasum <file> | awk '$1=="<checksum>" {print"good to go"}'  ```  
+``` wget -O bootstrap-salt.sh https://bootstrap.saltstack.com```
+``` sudo sh bootstrap-salt.sh```
+
+```    shasum <file> | awk '$1=="<checksum>" {print "\n ### MATCH ###"} '  ```  
   * sha256sum  
   * sha512sum  
   * md5sum
 
-
+<br><br>
+### Firewal rules
+https://github.com/saltstack/salt/blob/develop/pkg/salt.ufw  
 
 <br><br>
 ### Post installation configuration  
 
 <br><br>
 ### Pre seeding keys for minions
-https://docs.saltstack.com/en/latest/topics/tutorials/preseed_key.html
+https://docs.saltstack.com/en/latest/topics/tutorials/preseed_key.html  
+* Did not work on first try
 
 
 
 
 <br><br><br><br><br>
 ## Commands
-```salt '*' test.ping  ```  
-```salt '*' manage.status  ```  
-```salt '*' manage.alived  ```  
+``` 
+   salt-run manage.status  
+   salt.run manage.alived  
+  
+   salt '*' test.ping    
+```  
 
 <br>
